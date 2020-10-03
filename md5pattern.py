@@ -1,7 +1,8 @@
 import hashlib
+# md5 pattern to find same as input it matches 
 
-target = '8e7c9e'  
-candidate = 0
+target = '8e7c9e'   #target for getting the md5 pattern
+candidate = 0   
 while True:
     plaintext = str(candidate)
     hash = hashlib.md5(plaintext.encode('ascii')).hexdigest() #ascii encoding then md5 encoding
